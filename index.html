@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tamburins</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/tab_mo.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+<!-- gshap 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js" integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js" integrity="sha512-lZACdYsy0W98dOcn+QRNHDxFuhm62lfs8qK5+wPp7X358CN3f+ml49HpnwzTiXFzETs4++fADePDI+L2zwlm7Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!--youtube-->
+<link rel="stylesheet" href="./js/youtube.js">
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+    <h1><a href="index.html"><img src="./img/logotext.png" alt="logo"></a></h1>
+    <div class="icon-box">
+    <a href="#" class="menu-btn"><img src="./img/manuicon.png" alt="manu" class="menubtn"></a>
+    <a href="#" class="icon2"><img src="./img/carticon.png" alt="cart"></a>
+    </div>
+    </header>
+    
+    <section class="youtube">
+        <h2 class="hidden">youtube area</h2>
+        <div class="youtube_area">
+            <div id="player">
+                <video autoplay loop muted playsinline preload="auto" width="100%">
+                    <source src="video/(Story) 키스포에버와 함께하는 특별한 외출 _ KISS FOREVER solid perfume _ 탬버린즈.mp4" type="video/mp4">
+            </div>
+        </div>
+        <div class="logobadge"><img src="./img/logobadge.png" alt="logobadge" id="logobadgeimg"></div>
+        <div class="badge">
+            <img src="./img/header_badge.png" alt="badge" class="floating candle">
+        </div>
+    </section>
+    <section class="item-box">
+        <h2 class="hidden">contents2 area</h2>
+        <ul class="item1">
+            <li>
+                <a href="#">
+                    <img src="./img/item1.png" alt="item">
+                    <p>무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</p>
+                    <p>FEY9</p>
+                    <p>8,500 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item2.png" alt="item">
+                    <p>샌달우드 | 패츌리 | 흙 내음</p>
+                    <p>000</p>
+                    <p>8,500 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item3.png" alt="item">
+                    <p>로즈우드 | 코코넛 향 | 우아함</p>
+                    <p>7</p>
+                    <p>8,500 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item4.png" alt="item">
+                    <p>패츌리 | 쌉싸래한 풀 줄기 | 스모키함</p>
+                    <p>712</p>
+                    <p>8,500 원</p>
+                </a>
+            </li>
+        </ul>
+        <ul class="item2">
+            <li>
+                <a href="#">
+                    <img src="./img/item5.png" alt="item">
+                    <p>무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</p>
+                    <p>FEY9</p>
+                    <p>32,000 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item6.png" alt="item">
+                    <p>무화과나무 | 엠브레트 씨앗 | 달콤 씁쓸한</p>
+                    <p>FEY9</p>
+                    <p>18,000 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item7.png" alt="item">
+                    <p>월계수 잎 | 은방울꽃 | 정돈된 가죽</p>
+                    <p>VEIN</p>
+                    <p>32,000 원</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="./img/item8.png" alt="item">
+                    <p>월계수 잎 | 은방울꽃 | 정돈된 가죽</p>
+                    <p>VEIN</p>
+                    <p>18,000 원</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- Slider main container -->
+<div class="swiper">
+    
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./img/slide1.jpg" alt="slide"></div>
+    <div class="swiper-slide"><img src="./img/slide2.jpg" alt="slide"></div>
+    <div class="swiper-slide"><img src="./img/slide3.jpg" alt="slide"></div>
+    <div class="swiper-slide"><img src="./img/slide4.jpg" alt="slide"></div>
+    <div class="swiper-slide"><img src="./img/slide5.jpg" alt="slide"></div>
+    <div class="swiper-slide"><img src="./img/slide6.jpg" alt="slide"></div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+</div>
+    <div class="menu">
+        <div class="menu-left-box">
+            <img src="./img/manulogo.png" alt="">
+            <nav class="one">
+                <ul class="login">
+                    <li><a href="#">Log in</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+                <ul class="gnb">
+                    <li><a href="#">SHOP</a>
+                    <ul class="sub">
+                        <li><a href="#">전체보기 </a></li>
+                        <li><a href="#">베스트셀러 </a></li>
+                        <li><a href="#">샤워리바디 </a></li>
+                        <li><a href="#">튜브 핸드</a></li>
+                        <li><a href="#">올팩티브 캔들 </a></li>
+                        <li><a href="#">퍼퓸 핸드</a></li>
+                        <li><a href="#">체인 핸드 </a></li>
+                        <li><a href="#">손 소독제 </a></li>
+                        <li><a href="#">핸드앤바디 </a></li>
+                        <li><a href="#">멀티프래그런스</a></li>
+                        <li><a href="#">선물 추천 </a></li>
+                        <li><a href="#">샘플 키트 </a></li>
+                        <li><a href="#">향 오브젝트</a></li>
+                    </ul></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">OUR STORY</a></li>
+                    <li><a href="#">CAMPAIGN</a></li>
+                    <li><a href="#">PRESS</a></li>
+                    <li><a href="#">STORES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="manu-bg"></div>
+    </div>
+    <section class="section1-area">
+        <div>
+            <section class="fixed-bg">
+                <h2 class="hidden">fixed bg</h2>
+            </section>
+        <div class="text-box">
+        <h2>GLASS DIFFUSER</h2>
+        <p class="text1">두가지 향의 디퓨저</p>
+        <p>
+            탬버린즈 고유의 디자인을 녹여낸 우아한 실루엣의 글라스 디퓨저는<br>
+            유리 공예 장인이 유리볼 하나하나를 수작업으로 탄생시킨 작품이며,<br>
+            여러 차례의 수공예 공정을 거쳐 개체마다 <br>
+            모양과 크기가 각각 다른 고유의 아름다움을 지닙니다.<br>
+            제품 그 이상의 가치를 전달하는 탬버린즈만의 오브젝트 컬렉션으로<br>
+            일상의 공간에 활기와 휴식을 채워보세요.
+        </p>
+        <div class="black-btn"><p>자세히보기</p></div>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <section class="footrer-section">
+            <h2 class="hidden">footer section</h2>
+        <div class="footer-menu2">
+        <ul class="footer1">
+            <li>주)아이아이컴바인드</li>
+            <li>사업자등록번호: 119-86-38589</li>
+            <li>대표자: 김한국</li>
+            <li>서울특별시 마포구 어울마당로5길 41 </li>
+            <li>대표번호: 1644-1246</li>
+            <li>이메일: cs@tamburins.com</li>
+        </ul>
+        <ul class="footer2">
+            <li>개인정보 보호 책임자: 박세진</li>
+            <li>호스팅 서비스 사업자: Aws</li>
+            <li>통신판매업신고: 제 2014-서울마포-1050호 <a href="#">(사업자정보확인)</a></li>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+        </ul>
+    </div>
+    <div class="address">
+        <p>고객님의 안전한 현금자산 거래를 위하여 하나은행과 채무지급보증계약을 체결하여 보장해드리고 있습니다. <a href="#">서비스 가입사실 확인</a></p>
+        <address>© 탬버린즈 대한민국</address>
+        </div>
+    </section>
+    </footer>
+    
+</body>
+<script src="./js/jquery-1.12.3.js"></script>
+<script src="./js/main.js"></script>
+</html>

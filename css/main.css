@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@font-face {
+    font-family: MaruBuri-Regular;
+    src: url(../font/MaruBuri-Regular.ttf);
+    src: url(../font/MaruBuri-Regular.otf);
+}
+
+
+/*hedaer area*/
+header{width: 100%; height: 150px; background: url(../img/main_bg.png) no-repeat; 
+    position: fixed; z-index: 20; min-width: 1520px;}
+header h1 a img{margin: auto; padding-top: 80px; width: 250px;}
+header div.icon-box{display: flex; justify-content: space-around;}
+header div.icon-box a img{position: absolute; top: 100px; display: block;} 
+
+/*menu area*/
+.menu{height: 100%; width: 600px; position: fixed; top: 0; display: none; z-index: 50;}
+.menu .menu-left-box{ background: #B39A7C; height: 100%; z-index: 20; position: relative;}
+.menu .menu-left-box nav{position: absolute; top: 170px;}
+.menu ul.login{display: flex; padding-bottom: 10px;}
+.menu ul.login li{font-size: 13px;}
+.menu ul.login li:hover{text-decoration: underline;}
+.menu ul.gnb li ul.sub{padding-top: 5px; display: none;}
+.menu ul.gnb li ul.sub li{font-size: 13px; padding-top: 5px; font-family: 'MaruBuri-Regular';}
+.menu ul.gnb li ul.sub li:hover{text-decoration: underline;}
+.menu-left-box{padding-left: 20px; padding-top: 10px;}
+.menu-left-box nav{padding-top: 30px;}
+.menu-left-box nav ul li{font-size: 25px; padding: 5px; font-family: 'MaruBuri-Regular';}
+.manu-bg{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 19;}
+
+/*youtube area*/
+.youtube{position: relative; width: 100%; height: 790px; min-width: 1520px}
+.youtube #player{width: 100%;}
+.youtube #player video{width: 100%;}
+.youtube div.badge img{position: absolute; bottom: -80px; left: 70px; z-index: 2;}
+.logobadge img{position: absolute; top: 300px !important; right: 130px; width: 15%;}
+
+
+/*section1 area*/
+.fixed-bg{width: 100%; height: 500px; background-size: cover; display: flex;
+    background: url(../img/diffuser.png) no-repeat center 150px fixed;
+justify-content: center; align-items: center;}
+.section1-area{width: 100%; height: 950px; min-width: 1520px;}
+.section1-area div img{margin: auto; width: 100%;}
+.section1-area div h2{text-align: center; font-size: 40px; padding-top: 50px;
+    padding-bottom: 10px;}
+.section1-area .text-box{padding-left: 20px; padding-top: 50px;}
+.section1-area div p{text-align: center; padding: 10px; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+.section1-area div p.text1{font-size: 18px; font-family: 'MaruBuri-Regular';}
+.text-box h2{font-family: 'MaruBuri-Regular';}
+.black-btn{background: #333; width: 100px; height: 20px; margin: auto; color: #fff; border-radius: 5px; opacity: 50%; line-height: 1.5; margin-top: 10px;
+transition: all 0.3s; text-align: center; font-size: 15px;}
+.black-btn:hover{background: black; opacity: 100;}
+
+/*section2 area*/
+.item-box{width: 1000px; height: 850px; padding-top: 100px; margin-left: 150px;}
+.item1, .item2{display: flex;}
+.item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+.item1 li a img, .item2 li a img{transition: all 0.3s;}
+.item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
+.item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
+.item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 25px; color: #5C3A2E;}
+
+/*footer area*/
+footer{width: 1420px; height: 250px; background: url(../img/footer_bg.png) no-repeat; 
+    min-width: 100%; max-width: 1920px;}
+footer .footrer-section{padding-left: 100px;}
+footer p{text-align: center;}
+footer address{text-align: center; padding-top: 10px;}
+footer .footer-menu2{width: 1100px; padding-top: 120px; padding-bottom: 30px; 
+    margin: auto; padding-left: 180px;} 
+footer .footer-menu2 ul{padding-top: 5px; float: left;}
+footer .footer-menu2 ul li{font-size: 12px; float: right;}
+footer p{padding-top: 40px;}
+footer p, footer address{font-size: 13px;}
+.footer-menu2 ul li::after{content: "|";padding: 0 3px;}
+ul.footer1 li:first-child::after{content: "";}
+ul.footer2 li:first-child::after{content: "";}
+ul.footer2{padding-left: 20px;}
+footer ul li a:hover{text-decoration: underline;}
+footer .addres{width: 1920px; margin: auto;}
+

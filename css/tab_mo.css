@@ -1,0 +1,157 @@
+@charset "UTF-8";
+@font-face {
+    font-family: MaruBuri-Regular;
+    src: url(../font/MaruBuri-Regular.ttf);
+    src: url(../font/MaruBuri-Regular.otf);
+}
+
+/* mo-header */
+header{width: 100%; height: 80px; background: url(../img/main_bg.png) no-repeat;
+position: fixed; z-index: 20; min-width: 375px; position: absolute; top: 0; position: fixed;}
+header h1 a img{margin: auto; padding-top: 15px;}
+header div.icon-box{display: flex; justify-content: space-around;}
+header div.icon-box a img{position: absolute; top: 50px; width: 20px; left: 20px;}
+header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
+
+/* mo-menu-area */
+.menu{height: 100%; width: 300px; position: fixed; top: 0; z-index: 50; display: none;}
+.menu .menu-left-box{background: #b39a7c; height: 100%; z-index: 50; position: relative;}
+.menu .menu-left-box nav{position: absolute; top: 170px;}
+.menu ul.login{display: flex; padding-bottom: 10px; padding-top: 10px;}
+.menu ul.login li{font-size: 13px;}
+.menu ul.login li:hover{text-decoration: underline;}
+.menu ul.gnb li ul.sub{padding-top: 5px; display: none;}
+.menu ul.gnb li ul.sub li{font-size: 13px; padding-top: 5px; font-family: 'MaruBuri-Regular';}
+.menu ul.gnb li ul.sub li:hover{text-decoration: underline;}
+.menu-left-box{padding-left: 20px; padding-top: 10px;}
+.menu-left-box nav{padding-top: 30px;}
+.menu-left-box nav ul li{font-size: 25px; padding: 5px; font-family: 'MaruBuri-Regular';}
+.manu-bg{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 10;}
+
+/*youtube area*/
+.youtube{position: relative; width: 100%; height: 300px; min-width: 1520px; display: none;}
+.youtube #player{width: 100%;}
+.youtube #player video{width: 100%;}
+.youtube div.badge img{position: absolute; bottom: -80px; left: 70px; z-index: 2; display: none;}
+
+/*slide area*/
+/*.logobadge img{display: none;}
+.slide-box ul li img{width: 100%;}*/
+.swiper{width: 100%; height: 500px;}
+
+/*section2 area*/
+.item-box{width: 100%; height: 400px; min-height: 100%; margin-top: 150px;}
+.item1, .item2{display: flex; justify-content: space-between;}
+.item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+.item1 li a img, .item2 li a img{transition: all 0.3s; width: 90%; padding-left: 10px;}
+.item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
+.item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
+.item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 17px; color: #5C3A2E;}
+.item1 p:nth-child(2), .item2 p:nth-child(2){display: none;}
+.item1 p:nth-child(4), .item2 p:nth-child(4){font-size: 12px;}
+
+/*section1 area*/
+.fixed-bg{width: 100%; height: 600px; background-size: cover; display: flex;
+    background: url(../img/diffuser.png) no-repeat center 150px fixed;
+justify-content: center; align-items: center;}
+.section1-area{width: 100%; height: 1000px; min-width: 375px; position: relative;}
+.section1-area div img{margin: auto; width: 100%;}
+.section1-area div h2{text-align: center; font-size: 40px; padding-top: 80px;
+    padding-bottom: 10px;}
+.section1-area div p{text-align: center; padding: 10px; line-height: 1.3; font-family: 'MaruBuri-Regular';
+color: #000; font-size: 12px;}
+.text-box{background: rgba(0,0,0,0.3); height: 400px;}
+.section1-area div p.text1{font-size: 15px; font-family: 'MaruBuri-Regular';}
+.text-box h2{font-family: 'MaruBuri-Regular'; color: #000;}
+.black-btn{width: 100px; margin: auto; transition: all 0.3s;}
+.black-btn:hover{text-decoration: underline;  background: rgba(0,0,0,0.4); border-radius: 10px;}
+
+/*footer area*/
+footer{width: 375px; height: 250px; background: url(../img/footer_bg.png) no-repeat;
+    min-width: 100%; max-width: 375px; text-align: center;}
+footer .footrer-section{padding-top: 50px;}
+footer p{text-align: center;}
+footer address{text-align: center; padding-top: 10px;}
+footer .footer-menu2{width: 300px; padding-bottom: 10px; padding-top: 20px; margin: auto;} 
+footer .footer-menu2 ul li{font-size: 11px;}
+footer p{padding-top: 5px;}
+footer p, footer address{display: none;}
+footer ul li a:hover{text-decoration: underline;}
+
+/*tab*/
+@media all and (min-width:768px){
+    .section1-area{height: 1000px; position: relative; margin: auto;}
+    .text-box{width: 500px; height: 400px; margin: auto; border-bottom: 2px solid #000;
+    margin-top: 50px; border-top: 2px solid #000; background: none;}
+    .item-box{height: 500px;}
+    footer{text-align: left; text-align: center;}
+}/**/
+
+/*pc*/
+@media all and (min-width:960px){
+    header{width: 100%; height: 150px; background: url(../img/main_bg.png) no-repeat; 
+        position: fixed; z-index: 20; min-width: 100%;}
+    header h1 a img{margin: auto; padding-top: 80px; width: 250px;}
+    header div.icon-box{display: flex; justify-content: space-around;}
+    header div.icon-box a img{position: absolute; top: 100px; display: block;} 
+    
+    /*menu area*/
+    .menu{height: 100%; width: 600px; position: fixed; top: 0; display: none; z-index: 50;}
+    .menu .menu-left-box{ background: #B39A7C; height: 100%; z-index: 20; position: relative;}
+    .menu .menu-left-box nav{position: absolute; top: 170px;}
+    .menu ul.login{display: flex; padding-bottom: 10px;}
+    .menu ul.login li{font-size: 13px;}
+    .menu ul.login li:hover{text-decoration: underline;}
+    .menu ul.gnb li ul.sub{padding-top: 5px; display: none;}
+    .menu ul.gnb li ul.sub li{font-size: 13px; padding-top: 5px; font-family: 'MaruBuri-Regular';}
+    .menu ul.gnb li ul.sub li:hover{text-decoration: underline;}
+    .menu-left-box{padding-left: 20px; padding-top: 10px;}
+    .menu-left-box nav{padding-top: 30px;}
+    .menu-left-box nav ul li{font-size: 25px; padding: 5px; font-family: 'MaruBuri-Regular';}
+    .manu-bg{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 19;}
+    
+    /*youtube area*/
+    .youtube{position: relative; width: 960px; height: 850px;
+        display: block; min-height: 100%; margin: auto; min-width: 100%;}
+    .youtube #player{width: 100%; margin: auto;}
+    .youtube #player video{width: 100%;}
+    .youtube div.badge img{position: absolute; top: 200px; left: 70px; z-index: 5; display: block; width: 180px;}
+    .logobadge img{position: absolute; right: 50px; position: fixed; z-index: 5; bottom: 100px;
+        width: 200px; display: block;}
+    
+    
+    /*section1 area*/
+    .fixed-bg{width: 100%; height: 500px; background-size: cover; display: flex;
+        background: url(../img/diffuser.png) no-repeat center 150px fixed;
+    justify-content: center; align-items: center;}
+    .section1-area{width: 960px; height: 950px; min-width: 100%;}
+    .section1-area div img{margin: auto; width: 100%;}
+    .section1-area div h2{text-align: center; font-size: 40px; padding-top: 50px;
+        padding-bottom: 10px;}
+    .section1-area .text-box{padding-left: 20px; margin: auto; position: relative;
+        margin-top: 50px}
+    .section1-area div p{text-align: center; padding: 10px; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+    .section1-area div p.text1{font-size: 18px; font-family: 'MaruBuri-Regular';}
+    .text-box h2{font-family: 'MaruBuri-Regular'; margin-top: 25px;}
+    .black-btn{width: 100px; margin: auto; transition: all 0.3s;}
+    .black-btn:hover{text-decoration: underline;  background: rgba(0,0,0,0.4); border-radius: 10px;}
+    
+    /*section2 area*/
+    .item-box{width: 1000px; height: 550px; padding-top: 50px; margin-left: 150px;
+    margin: auto; padding-top: 100px;}
+    .item1, .item2{display: flex;}
+    .item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+    .item1 li a img, .item2 li a img{transition: all 0.3s;}
+    .item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
+    .item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
+    .item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 25px; color: #5C3A2E;}
+    
+    /*slide area*/
+    .swiper{width: 960px; height: 600px;}
+    .swiper-slide img{background: #5C3A2E;}
+
+    /*footer area*/
+    footer{width: 960px; height: 250px; background: url(../img/footer_bg.png) no-repeat; 
+        min-width: 100%;}
+    footer .footer-menu2{}
+}
