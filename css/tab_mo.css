@@ -41,7 +41,7 @@ header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 .swiper{width: 100%; height: 400px; margin-bottom: 50px;}
 
 /*section2 area*/
-.item-box{width: 100%; height: 1000px; min-height: 100%; margin-top: 100px;}
+.item-box{width: 100%; height: 1000px; min-height: 100%;}
 .item1{float: left; width: 50%; }
 .item2{float: right; width: 50%;}
 .item1 p, .item2 p{text-align: center; line-height: 1.3; 
@@ -153,13 +153,14 @@ justify-content: center; align-items: center;}
     
     /*section2 area*/
     .item-box{height: 800px;}
-    .item1, .item2{}
+    .item1, .item2{width: 75%; margin: auto;}
     .item1 p, .item2 p{text-align: center; line-height: 1.3; 
         font-family: 'MaruBuri-Regular';}
     .item1 li a img, .item2 li a img{transition: all 0.3s;}
     .item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
     .item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
     .item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 25px; color: #5C3A2E;}
+    .item1 p:nth-child(2), .item2 p:nth-child(2){display: block; font-size: 14px;}
     
     /*slide area*/
     .swiper{width: 960px; height: 600px;}
