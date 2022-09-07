@@ -1,5 +1,5 @@
 
-# 탬버린즈 리디자인 - 김송희 (https://solsong.github.io/-soltamhee/)
+# 탬버린즈 리디자인 - 김송희 (https://solsong.github.io/newtam/)
 
 ## 제작기간 일주일
 
