@@ -10,7 +10,7 @@ header{width: 100%; height: 80px; background: url(../img/main_bg.png) no-repeat;
 position: fixed; z-index: 20; min-width: 375px; position: absolute; top: 0; position: fixed;}
 header h1 a img{margin: auto; padding-top: 15px;}
 header div.icon-box{display: flex; justify-content: space-around;}
-header div.icon-box a img{position: absolute; top: 50px; width: 20px; left: 20px;}
+header div.icon-box a img{position: absolute; top: 40px; width: 20px; left: 20px;}
 header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 
 /* mo-menu-area */
@@ -29,26 +29,35 @@ header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 .manu-bg{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 10;}
 
 /*youtube area*/
-.youtube{position: relative; width: 100%; height: 300px; min-width: 1520px; display: none;}
+.youtube{position: relative; width: 100%; height: 300px; 
+    min-width: 100%; display: none;}
 .youtube #player{width: 100%;}
 .youtube #player video{width: 100%;}
 .youtube div.badge img{position: absolute; bottom: -80px; left: 70px; z-index: 2; display: none;}
 
 /*slide area*/
+/*.logobadge img{display: none;}
+.slide-box ul li img{width: 100%;}*/
 .swiper{width: 100%; height: 400px; margin-bottom: 50px;}
 
 /*section2 area*/
-.item-box{width: 100%; height: 350px; min-height: 100%; margin-top: 150px;}
-.item1, .item2{display: flex; justify-content: space-between;}
-.item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
-.item1 li a img, .item2 li a img{transition: all 0.3s; width: 90%; padding-left: 10px;}
+.item-box{width: 100%; height: 1000px; min-height: 100%; margin-top: 100px;}
+.item1{float: left; width: 50%; }
+.item2{float: right; width: 50%;}
+.item1 p, .item2 p{text-align: center; line-height: 1.3; 
+    font-family: 'MaruBuri-Regular'; margin: auto;}
+.item1 li a img, .item2 li a img{transition: all 0.3s; width: 250px; margin: auto;}
 .item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
-.item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
-.item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 17px; color: #5C3A2E;}
+.item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){
+    text-decoration: underline;}
+.item1 p:nth-child(3), .item2 p:nth-child(3){font-weight: bold; font-size: 17px; 
+    color: #5C3A2E;}
 .item1 p:nth-child(2), .item2 p:nth-child(2){display: none;}
 .item1 p:nth-child(4), .item2 p:nth-child(4){font-size: 12px;}
-
 /*section1 area*/
+/*.fixed-bg{width: 100%; height: 600px; background-size: cover; display: flex;
+    background: url(../img/diffuser.png) no-repeat center 150px fixed;
+justify-content: center; align-items: center;}*/
 .section1-area{width: 100%; height: 400px; min-width: 375px; position: relative;}
 .section1-area div img{margin: auto; width: 100%;}
 .section1-area div h2{text-align: center; font-size: 40px; padding-top: 50px;
@@ -56,10 +65,13 @@ header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 .section1-area div p{text-align: center; padding: 10px; line-height: 1.3; font-family: 'MaruBuri-Regular';
 color: #000; font-size: 12px;}
 .text-box{background: url(../img/diffuser.png) no-repeat; height: 400px;}
-.section1-area div p.text1{font-size: 15px; font-family: 'MaruBuri-Regular'; padding-top: 50px;}
+.section1-area div p.text1{font-size: 13px; font-family: 'MaruBuri-Regular'; color: #fff;
+width: 90%; margin: auto; background: #333; opacity: 0.8; border-radius: 10px 10px 0 0;}
+.section1-area div p:nth-child(3){background:rgba(0,0,0,0.2); color: #fff; font-size: 14px; line-height: 2;
+height: 170px; width: 90%; margin: auto; border-radius: 0 0 10px 10px;}
 .text-box h2{font-family: 'MaruBuri-Regular'; color: #000; padding-top: 10px;}
-.black-btn{width: 100px; margin: auto; background: rgba(0,0,0,0.4); border-radius: 10px;}
-
+.black-btn{width: 100px; margin: auto; border-top: 1px solid #333; margin-top: 20px; cursor: pointer;
+border-bottom: 1px solid #333;}
 /*footer area*/
 footer{width: 375px; height: 250px; background: url(../img/footer_bg.png) no-repeat;
     min-width: 100%; max-width: 375px; text-align: center;}
@@ -82,6 +94,13 @@ footer ul li a:hover{text-decoration: underline;}
     background: url(../img/diffuser.png) no-repeat center 150px fixed;
 justify-content: center; align-items: center;}
     footer{text-align: left; text-align: center;}
+    .section1-area div p:nth-child(3){background: none; color: #000;}
+    .black-btn{border: none; background: rgba(0,0,0,0.5); border-radius: 10px;}
+    .section1-area div p.text1{font-size: 15px; font-family: 'MaruBuri-Regular'; color: #333;
+        width: 90%; margin: auto; background: none;}
+        .item-box{width: 100%; height: 550px; margin: auto; padding-top: 200px;}
+        .item1, .item2{display: flex; justify-content: space-between; float: none; width: 100%;}
+        .item1 li a img, .item2 li a img{transition: all 0.3s; width: 90%; padding-left: 10px;}
 }/**/
 
 /*pc*/
@@ -108,14 +127,13 @@ justify-content: center; align-items: center;}
     .manu-bg{width: 100%; height: 100%; position: fixed; top: 0; left: 0; background: rgba(0,0,0,0.5); z-index: 19;}
     
     /*youtube area*/
-    .youtube{position: relative; width: 960px; height: 850px;
-        display: block; min-height: 100%; margin: auto; min-width: 100%;}
-    .youtube #player{width: 100%; margin: auto;}
-    .youtube #player video{width: 100%;}
+    .youtube{position: relative; width: 960px; height: 800px;
+        display: block; margin: auto; min-width: 100%;}
+    .youtube #player{min-width: 100%;}
+    .youtube #player video{min-width: 100%;}
     .youtube div.badge img{position: absolute; top: 200px; left: 70px; z-index: 5; display: block; width: 180px;}
     .logobadge img{position: absolute; right: 50px; position: fixed; z-index: 5; bottom: 100px;
         width: 200px; display: block;}
-    
     
     /*section1 area*/
     .fixed-bg{width: 100%; height: 500px; background-size: cover; display: flex;
@@ -134,10 +152,10 @@ justify-content: center; align-items: center;}
     .black-btn:hover{text-decoration: underline;  background: rgba(0,0,0,0.4); border-radius: 10px;}
     
     /*section2 area*/
-    .item-box{width: 1000px; height: 550px; padding-top: 50px; margin-left: 150px;
-    margin: auto; padding-top: 100px;}
-    .item1, .item2{display: flex;}
-    .item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
+    .item-box{height: 800px;}
+    .item1, .item2{}
+    .item1 p, .item2 p{text-align: center; line-height: 1.3; 
+        font-family: 'MaruBuri-Regular';}
     .item1 li a img, .item2 li a img{transition: all 0.3s;}
     .item1 li a img:hover, .item2 li a img:hover{filter: blur(5px);}
     .item1 li a:hover p:nth-child(3), .item2 li a:hover p:nth-child(3){text-decoration: underline;}
