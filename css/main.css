@@ -37,9 +37,9 @@ header div.icon-box a img{position: absolute; top: 100px; display: block;}
 
 
 /*section1 area*/
-.fixed-bg{width: 100%; height: 500px; background-size: cover; display: flex;
+/*.fixed-bg{width: 100%; height: 500px; background-size: cover; display: flex;
     background: url(../img/diffuser.png) no-repeat center 150px fixed;
-justify-content: center; align-items: center;}
+justify-content: center; align-items: center;}*/
 .section1-area{width: 100%; height: 950px; min-width: 1520px;}
 .section1-area div img{margin: auto; width: 100%;}
 .section1-area div h2{text-align: center; font-size: 40px; padding-top: 50px;

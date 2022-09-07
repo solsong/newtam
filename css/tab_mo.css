@@ -37,10 +37,10 @@ header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 /*slide area*/
 /*.logobadge img{display: none;}
 .slide-box ul li img{width: 100%;}*/
-.swiper{width: 100%; height: 500px;}
+.swiper{width: 100%; height: 400px; margin-bottom: 50px;}
 
 /*section2 area*/
-.item-box{width: 100%; height: 400px; min-height: 100%; margin-top: 150px;}
+.item-box{width: 100%; height: 350px; min-height: 100%; margin-top: 150px;}
 .item1, .item2{display: flex; justify-content: space-between;}
 .item1 p, .item2 p{text-align: center; line-height: 1.3; font-family: 'MaruBuri-Regular';}
 .item1 li a img, .item2 li a img{transition: all 0.3s; width: 90%; padding-left: 10px;}
@@ -51,20 +51,19 @@ header div.icon-box a:nth-child(2){left: 35px; position: absolute; top: -3px;}
 .item1 p:nth-child(4), .item2 p:nth-child(4){font-size: 12px;}
 
 /*section1 area*/
-.fixed-bg{width: 100%; height: 600px; background-size: cover; display: flex;
+/*.fixed-bg{width: 100%; height: 600px; background-size: cover; display: flex;
     background: url(../img/diffuser.png) no-repeat center 150px fixed;
-justify-content: center; align-items: center;}
-.section1-area{width: 100%; height: 1000px; min-width: 375px; position: relative;}
+justify-content: center; align-items: center;}*/
+.section1-area{width: 100%; height: 400px; min-width: 375px; position: relative;}
 .section1-area div img{margin: auto; width: 100%;}
-.section1-area div h2{text-align: center; font-size: 40px; padding-top: 80px;
-    padding-bottom: 10px;}
+.section1-area div h2{text-align: center; font-size: 40px; padding-top: 50px;
+    padding-bottom: 10px; color: #000; width: 400px; margin: auto; height: 40px;}
 .section1-area div p{text-align: center; padding: 10px; line-height: 1.3; font-family: 'MaruBuri-Regular';
 color: #000; font-size: 12px;}
-.text-box{background: rgba(0,0,0,0.3); height: 400px;}
-.section1-area div p.text1{font-size: 15px; font-family: 'MaruBuri-Regular';}
-.text-box h2{font-family: 'MaruBuri-Regular'; color: #000;}
-.black-btn{width: 100px; margin: auto; transition: all 0.3s;}
-.black-btn:hover{text-decoration: underline;  background: rgba(0,0,0,0.4); border-radius: 10px;}
+.text-box{background: url(../img/diffuser.png) no-repeat; height: 400px;}
+.section1-area div p.text1{font-size: 15px; font-family: 'MaruBuri-Regular'; padding-top: 50px;}
+.text-box h2{font-family: 'MaruBuri-Regular'; color: #000; padding-top: 10px;}
+.black-btn{width: 100px; margin: auto; background: rgba(0,0,0,0.4); border-radius: 10px;}
 
 /*footer area*/
 footer{width: 375px; height: 250px; background: url(../img/footer_bg.png) no-repeat;
@@ -82,8 +81,11 @@ footer ul li a:hover{text-decoration: underline;}
 @media all and (min-width:768px){
     .section1-area{height: 1000px; position: relative; margin: auto;}
     .text-box{width: 500px; height: 400px; margin: auto; border-bottom: 2px solid #000;
-    margin-top: 50px; border-top: 2px solid #000; background: none;}
+    margin-top: 30px; border-top: 2px solid #000; background: none;}
     .item-box{height: 500px;}
+    .fixed-bg{width: 100%; height: 600px; background-size: cover; display: flex;
+    background: url(../img/diffuser.png) no-repeat center 150px fixed;
+justify-content: center; align-items: center;}
     footer{text-align: left; text-align: center;}
 }/**/
 
